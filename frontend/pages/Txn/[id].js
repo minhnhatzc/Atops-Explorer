@@ -1,9 +1,15 @@
-import React from 'react'
+import Head from "next/head";
+import Header from "@/components/Header.js";
+import Txn from "@/components/Txn";
 
-function [id]() {
+export default function Home() {
   return (
-    <div>[id]</div>
-  )
+    <section className="font-mono min-h-screen bg-[#131615]">
+      <Head>
+        <title>Aptos Explorer</title>
+      </Head>
+      <Header />
+      <Txn />
+    </section>
+  );
 }
-
-export default [id]
